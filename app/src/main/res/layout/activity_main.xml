@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Toolbar
+        android:id="@+id/tb_Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:text="@string/mi_kardex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text28"
+            android:gravity="center"/>
+    </Toolbar>
+
+    <Spinner
+        android:id="@+id/spVista_Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_Main"/>
+
+    <TextView
+        android:id="@+id/tvFecha_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spVista_Main"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/text20"
+        android:hint="@string/fecha"
+        android:layout_margin="@dimen/margin_views"
+        android:background="@drawable/marco"
+        android:padding="@dimen/text12"/>
+
+    <EditText
+        android:id="@+id/etFactura_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spVista_Main"
+        android:textSize="@dimen/text20"
+        android:background="@drawable/marco"
+        android:hint="@string/factura"
+        android:padding="@dimen/text12"
+        android:layout_margin="@dimen/margin_views"
+        android:imeOptions="actionDone"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/btBuscar_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/buttonRaizedGreen"
+        android:text="@string/buscar"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/spVista_Main"
+        android:layout_margin="@dimen/margin_views"
+        android:padding="@dimen/text12"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_Main"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/tvFecha_Main"
+        android:layout_margin="@dimen/margin_views"
+        android:paddingBottom="50dp"
+        android:background="@color/colorGray"/>
+
+    <Button
+        android:id="@+id/btEntradas_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rv_Main"
+        android:layout_alignLeft="@+id/rv_Main"
+        android:layout_marginLeft="@dimen/margin_views"
+        android:layout_marginRight="@dimen/margin_views"
+        android:theme="@style/buttonRaized"
+        android:text="@string/registrar_entrada"/>
+    <Button
+        android:id="@+id/btSalidas_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rv_Main"
+        android:layout_toEndOf="@+id/btEntradas_Main"
+        android:theme="@style/buttonRaizedRed"
+        android:text="@string/registrar_salida" />
+
+    <Button
+        android:id="@+id/btNuevoProducto_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rv_Main"
+        android:layout_toEndOf="@+id/btSalidas_Main"
+        android:layout_marginLeft="@dimen/margin_views"
+        android:theme="@style/buttonRaizedGreen"
+        android:text="@string/nuevo_producto" />
+
+
+</RelativeLayout>

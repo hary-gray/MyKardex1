@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">MyKardex</string>
+    <string name="eliminar_producto">Se eliminara este producto</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="inhabilitar">Inhabilitar</string>
+    <string name="habilitar">Habilitar</string>
+    <string name="mi_kardex">Mi Kardex</string>
+    <string name="fecha">fecha</string>
+    <string name="registrar_entrada">Add Entrada</string>
+    <string name="registrar_salida">Add Salida</string>
+    <string name="nuevo_producto">Add Producto</string>
+    <string name="apr">abr</string>
+    <string name="mar">mar</string>
+    <string name="jan">ene</string>
+    <string name="may">may</string>
+    <string name="feb">feb</string>
+    <string name="jun">jun</string>
+    <string name="jul">jul</string>
+    <string name="ago">ago</string>
+    <string name="nov">nov</string>
+    <string name="oct">oct</string>
+    <string name="sep">sep</string>
+    <string name="dec">dic</string>
+    <string name="factura">Factura</string>
+    <string name="buscar">Buscar</string>
+    <string name="factura_sin_registro">No existen entradas con esta factura</string>
+    <string name="ingrese_factura">Ingrese una factura y presione \"Buscar\"</string>
+    <string name="selecione_producto">Seleccione un producto</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="precio">Valor por unidad</string>
+    <string name="volver">Volver</string>
+    <string name="addEntrada">Add Entrada</string>
+    <string name="factura_vacia">Ingrese una factura</string>
+    <string name="cantidad_vacia">Ingrese una cantidad</string>
+    <string name="valor_vacio">Ingrese un valor por unidad</string>
+    <string name="selecione_proveedor">Seleccione un proveedor</string>
+    <string name="selecione_articulo">Seleccione un articulo</string>
+    <string name="selecione_material">Seleccine un material</string>
+    <string name="selecione_unidad_metrica">Seleccione unidad métrica</string>
+    <string name="addProducto">Add Producto</string>
+    <string name="AddSalida">Add Salida</string>
+    <string name="cantidad_exedida">La cantidad ingresada exede la cantidad exsitente del producto</string>
+    <string name="cantidad_minima">Este articulo ha llegado al minimo de existencias.</string>
+
+    <string-array name="spMain">
+        <item>Productos</item>
+        <item>Proveedores</item>
+        <item>Facturas</item>
+    </string-array>
+    <string-array name="unidadesMetricas">
+        <item>Unidades</item>
+        <item>metros</item>
+    </string-array>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text12">12dp</dimen>
+    <dimen name="text14">14dp</dimen>
+    <dimen name="text16">16dp</dimen>
+    <dimen name="text18">18dp</dimen>
+    <dimen name="text28">28dp</dimen>
+    <dimen name="text24">24dp</dimen>
+    <dimen name="margin_views">10dp</dimen>
+    <dimen name="text20">20dp</dimen>
+    <dimen name="text22">22dp</dimen>
+</resources>

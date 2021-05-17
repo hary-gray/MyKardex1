@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AgregarSalidaActivity">
+    <Toolbar
+        android:id="@+id/tb_AddSalida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:text="@string/mi_kardex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text28"
+            android:gravity="center"/>
+    </Toolbar>
+    <TextView
+        android:text="@string/selecione_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_views"/>
+
+    <Spinner
+        android:id="@+id/spProctucto_AddSalida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_views"/>
+
+    <TextView
+        android:id="@+id/tvFecha_AddSalida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text20"
+        android:hint="@string/fecha"
+        android:layout_margin="@dimen/margin_views"
+        android:background="@drawable/marco"
+        android:padding="@dimen/text12"/>
+
+    <EditText
+        android:id="@+id/etCantidad_AddSalida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text20"
+        android:hint="@string/cantidad"
+        android:layout_margin="@dimen/margin_views"
+        android:background="@drawable/marco"
+        android:padding="@dimen/text12"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btVolver_AddSalida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/buttonRaized"
+            android:text="@string/volver"
+            android:layout_marginLeft="@dimen/margin_views"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btAddSalida_AddSalida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/buttonRaizedGreen"
+            android:text="@string/AddSalida"
+            android:layout_marginLeft="@dimen/margin_views"/>
+    </LinearLayout>
+
+</LinearLayout>
